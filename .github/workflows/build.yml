@@ -20,7 +20,7 @@ jobs:
           context: .
           file: packages/twenty-server/Dockerfile
           push: true
-          tags: ghcr.io/${{ toLower(github.repository_owner) }}/twenty-server:main
+          tags: ghcr.io/brianclark490/twenty-server:main
 
   worker:
     runs-on: ubuntu-latest
@@ -38,4 +38,4 @@ jobs:
           context: .
           file: packages/twenty-worker/Dockerfile
           push: true
-          tags: ghcr.io/${{ toLower(github.repository_owner) }}/twenty-worker:main
+          tags: ghcr.io/brianclark490/twenty-worker:main
